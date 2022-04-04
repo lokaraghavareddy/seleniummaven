@@ -37,6 +37,7 @@ public class CaptureScreenshots {
 		Dimension d = driver.manage().window().getSize();
 		System.out.println(d.getHeight());
 		System.out.println(d.getWidth());
+		driver.manage().window().maximize();
 		driver.manage().window().setSize(new Dimension(800,800));
 		try {
 			Thread.sleep(5000);
